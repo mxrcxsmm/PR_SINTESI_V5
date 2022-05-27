@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/news.css">
+    <title>Document</title>
+    <script src="../js/alertas.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body class="animated">
+
+    <!--AQUI VA EL NAVBAR RESPONSIVE IMPLEMENTADO-->
+
+    <div>
+        <header class="header">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="logo">
+                        <a href="#">Comic & Manga</a>
+                    </div>
+                    <button type="button" class="nav-toggler">
+               <span></span>
+            </button>
+                    <nav class="nav">
+                        <ul>
+                            <li><a href="../home/home.html">HOME</a></li>
+                            <li><a href="../Noticias/Noticias.html" class="active">NEWS</a></li>
+                            <li><a href="../comics.php">COMICS</a></li>
+                            <li><a href="../index.html">INICIO</a></li>
+                            <li><a href="../comentarios.html ">SOPORTE</a></li>
+                            <li><a href="../log_home.php">REGISTRO</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    </div>
+
+
+    <!--AQUI VAN LOS TARGETS DE LOS COMICS-->
+    <div class="cont-padre">
+
+        <!--SWEET-->
+
+        <script src="sweetalert2.all.min.js"></script>
+
+        <script src="sweetalert2.min.js"></script>
+        <link rel="stylesheet" href="sweetalert2.min.css">
+
+        <!---->
+
+        <script>
+            const swalWithBootstrapButtons = Swal.mixin({
+                customClass: {
+                    confirmButton: 'btn btn-success',
+                    cancelButton: 'btn btn-danger'
+                },
+                buttonsStyling: true
+            })
+
+            swalWithBootstrapButtons.fire({
+                title: 'Alerta',
+                text: "Para proceder con las reservas deberas añadir un metodo de pago para continuar.",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonText: 'Añadir',
+                cancelButtonText: 'No',
+                reverseButtons: true
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    swalWithBootstrapButtons.fire(
+                        window.location = "../pago/pago.html"
+                    )
+                } else if (
+                    /* Read more about handling dismissals below */
+                    result.dismiss === Swal.DismissReason.cancel
+                ) {
+                    swalWithBootstrapButtons.fire(
+                        '',
+                        'No has añadido metodo de pago , no podras realizar pagos hasta proceder',
+                        'Error'
+                    )
+                }
+            })
+        </script>
+
+        <script></script>
+
+        <div class="contenedor">
+            <div class="box" onclick="alerta()">
+                <img src="./iconos/Naruto.png" alt="Naruto">
+            </div>
+            <div class="box-datos">
+                <h1></h1>
+                <p>¡Han destruido el castillo de Tanzaku!! Tsunade se topa con Orochimaru y, en una situación tensa e insostenible, le ofrece un acuerdo diabólico a cambio de que le cure los brazos...
+                </p>
+            </div>
+        </div>
+
+        <!---->
+
+        <div class="contenedor">
+            <div class="box" onclick="alerta()">
+                <img src="./iconos/Regreso al futuro.png" alt="Back To Future">
+            </div>
+            <div class="box-datos">
+                <h1></h1>
+                <p>Pocas películas han dejado su huella de manera tan marcada en la cultura popular como la trilogía de Regreso al futuro.</p>
+            </div>
+        </div>
+
+        <!---->
+
+        <div class="contenedor">
+            <div class="box" onclick="alerta()">
+                <img src="./iconos/Street Fighter.png" alt="Street Fighter">
+            </div>
+            <div class="box-datos">
+                <h1></h1>
+                <p>DURANTE 30 AÑOS, la saga Street Fighter ha ido creciendo sin parar, gracias a su sensacional combinación de creatividad, estilo y técnica</p>
+            </div>
+        </div>
+
+        <!---->
+
+        <div class="contenedor">
+            <div class="box" onclick="alerta()">
+                <img src="./iconos/Ataques a los titanes.png" alt="Pokemon">
+            </div>
+            <div class="box-datos">
+                <h1></h1>
+                <p>Gracias a la capitana Gloria, Xavi, el hermano de Carla, entra en la policía militar, al tiempo que extiende sus redes de búsqueda con la intención de poner a Carla bajo su control.</p>
+            </div>
+        </div>
+
+        <!---->
+
+        <div class="contenedor">
+            <div class="box" onclick="alerta()">
+                <img src="./iconos/SuperMan.png" alt="SuperMan">
+            </div>
+            <div class="box-datos">
+                <h1></h1>
+                <p>Lois Lane ya no está en el Daily Planet, pero al periódico han llegado nuevas incorporaciones justo cuando Metropolis afronta su enésima crisis</p>
+            </div>
+        </div>
+
+        <!---->
+
+        <div class="contenedor">
+            <div class="box" onclick="alerta()">
+                <img src="./iconos/Pokemon.png" alt="Pokemon">
+            </div>
+            <div class="box-datos">
+                <h1></h1>
+                <p>Sol viaja a Ula-Ula para continuar con los desafíos del recorrido insular y Luna acaba en Paraíso Æther tras sobrevivir a un naufragio</p>
+            </div>
+        </div>
+
+        <!---->
+
+
+        <div class="contenedor">
+            <div class="box" onclick="alerta()">
+                <img src="./iconos/SuperMan.png" alt="SuperMan">
+            </div>
+            <div class="box-datos">
+                <h1></h1>
+                <p>Grant Morrison (El Green Lantern) y Frank Quitely (El Multiverso) narran a lo largo de este volumen las últimas semanas del Hombre de Acero</p>
+            </div>
+        </div>
+
+        <!---->
+        <div class="contenedor">
+            <div class="box" onclick="alerta()">
+                <img src="./iconos/Pokemon.png" alt="Pokemon">
+            </div>
+            <div class="box-datos">
+                <h1></h1>
+                <p>Gracias a los poderes de clarividencia de Morti, Oro descubre el lugar donde se encuentra Lance, pero de pronto Ciudad Iris se convierte en un campo de batalla.</p>
+            </div>
+        </div>
+
+
+        <!---->
+
+        <!---->
+
+
+        <div class="contenedor">
+            <div class="box" onclick="alerta()">
+                <img src="./iconos/Pokemon.png" alt="Ataque de titanes">
+            </div>
+            <div class="box-datos">
+                <h1></h1>
+                <p>Mientras Platino reta a los Ases del Frente Batalla de la Bahía Gresca las fuerzas malignas prosiguen su implacable avance por la región de Sinnoh. </p>
+            </div>
+        </div>
+
+        <!---->
+        <div class="contenedor">
+            <div class="box" onclick="alerta()">
+                <img src="./iconos/BatMan.png" alt="BatMan">
+            </div>
+            <div class="box-datos">
+                <h1></h1>
+                <p>Gotham City y Villa Fábulas. Batman y Lobo Feroz. Dos mundos, dos detectives... ¡y un villano! El Ratón de Biblioteca ha orquestado un plan que requerirá de toda la habilidad de ambos héroes.</p>
+            </div>
+        </div>
+
+
+        <!---->
+
+        <!---->
+
+
+        <div class="contenedor">
+            <div class="box" onclick="alerta()">
+                <img src="./iconos/SpiderMan.png" alt="SpiderMan">
+            </div>
+            <div class="box-datos">
+                <h1></h1>
+                <p>El cómic de Spiderman especialmente recomendado para jóvenes lectores, que pueden descubrir en estas páginas al asombroso trepamuros y sus increíbles amigos. </p>
+            </div>
+        </div>
+
+        <!---->
+        <div class="contenedor">
+            <div class="box" onclick="alerta()">
+                <img src="./iconos/Spriggan.png" alt="Spriggan">
+            </div>
+            <div class="box-datos">
+                <h1></h1>
+                <p>Hace siglos, una gran civilización dominaba la Tierra con una tecnología muy avanzada, pero que acabó siendo destruida. </p>
+            </div>
+        </div>
+        <!---->
+
+    </div>
+
+</body>
+
+</html>

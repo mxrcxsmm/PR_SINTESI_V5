@@ -1,0 +1,334 @@
+body {
+    background-color: #040119;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+:root {
+    --color1: #928787;
+}
+
+.cont-padre {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 70px 0;
+}
+
+.contenedor {
+    height: 450px;
+    width: 21%;
+    margin: 0 15px;
+    overflow: hidden;
+}
+
+.contenedor img {
+    height: 350px;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+.box-datos {
+    height: 235px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.438);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: .4s;
+    border-radius: 10px;
+    color: #040119;
+}
+
+.box-datos h1 {
+    font-size: 1em;
+    margin-top: -10px;
+    margin-bottom: -5px;
+}
+
+.box-datos h2 {
+    font-size: .8em;
+}
+
+.box-datos h1,
+h2 {
+    font-family: sans-serif;
+    text-align: center;
+    color: black
+}
+
+.box-datos p {
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .9em;
+    width: 80%;
+    color: black
+}
+
+.box-datos span {
+    margin: 0 30px;
+    font-size: 1.2em;
+}
+
+span:nth-child(1) {
+    color: #3b5998;
+}
+
+span:nth-child(2) {
+    color: #55acee;
+}
+
+span:nth-child(3) {
+    color: #bb0000;
+}
+
+.contenedor:hover .box-datos {
+    transform: translateY(-160px);
+}
+
+
+/*NABVAR ESTILOS*/
+
+:root {
+    --color-1: #2f3240;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+
+/*header*/
+
+.header {
+    background-color: var(--color-1);
+    padding: 12px 0;
+    line-height: 1.5;
+}
+
+.header .logo,
+.header .nav {
+    padding: 0 15px;
+}
+
+.header .logo a {
+    font-size: 30px;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+
+.header .nav ul li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.header .nav ul li a {
+    display: block;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    padding: 10px 0;
+    transition: all 0.5s ease;
+}
+
+.header .nav ul li a.active,
+.header .nav ul li a:hover {
+    color: #ff0000b4;
+}
+
+.nav-toggler {
+    height: 34px;
+    width: 44px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    display: none;
+    margin-right: 15px;
+}
+
+.nav-toggler:focus {
+    outline: none;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.591);
+}
+
+.nav-toggler span {
+    height: 2px;
+    width: 20px;
+    background-color: var(--color-1);
+    display: block;
+    margin: auto;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.nav-toggler.active span {
+    background-color: transparent;
+}
+
+.nav-toggler span::before,
+.nav-toggler span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-1);
+    transition: all 0.3s ease;
+}
+
+.nav-toggler span::before {
+    transform: translateY(-6px);
+}
+
+.nav-toggler.active span::before {
+    transform: rotate(45deg);
+}
+
+.nav-toggler span::after {
+    transform: translateY(6px);
+}
+
+.nav-toggler.active span::after {
+    transform: rotate(135deg);
+}
+
+@media(max-width:991px) {
+    .nav-toggler {
+        display: block;
+    }
+    .header .nav {
+        width: 100%;
+        padding: 0;
+        max-height: 0px;
+        overflow: hidden;
+        visibility: hidden;
+        transition: all 0.5s ease;
+    }
+    .header .nav.open {
+        visibility: visible;
+    }
+    .header .nav ul {
+        padding: 12px 15px 0;
+        margin-top: 12px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .header .nav ul li {
+        display: block;
+        margin: 0;
+    }
+}
+
+
+/*fondo colores*/
+
+.animated {
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    background: linear-gradient(45deg, #26001B, #810034, #940238, #b6b000);
+    background-size: 400% 400%;
+    position: relative;
+    animation: cambiar 10s ease-in-out infinite;
+}
+
+
+/*keyframe*/
+
+@keyframes cambiar {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+
+/*responsive comics*/
+
+@media screen and (max-width:1024px) {
+    .cont-padre .contenedor {
+        width: 30%;
+        margin: 15px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .cont-padre .contenedor {
+        width: 50%;
+        margin: 15px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .cont-padre .contenedor {
+        width: 40%;
+        margin: 15px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .cont-padre .contenedor {
+        width: 55%;
+        margin: 20px 10px;
+    }
+}
+
+@media screen and (max-width:414px) {
+    .cont-padre .contenedor {
+        width: 100%;
+        margin: 20px 10px;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .cont-padre .contenedor {
+        width: 100%;
+        margin: 20px 10px;
+    }
+}

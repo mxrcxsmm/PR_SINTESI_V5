@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HOME</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+
+<body>
+    <!--AQUI VA LA NAVBAR RESPONSIVE IMPLEMENTADA-->
+    <div>
+        <header class="header">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="logo">
+                        <a href="#">Comic & Manga</a>
+                    </div>
+                    <button type="button" class="nav-toggler">
+               <span></span>
+            </button>
+                    <nav class="nav">
+                        <ul>
+                            <li><a href="#" class="active">HOME</a></li>
+                            <li><a href="../Noticias/Noticias.html">NEWS</a></li>
+                            <li><a href="../comics.php">COMICS</a></li>
+                            <li><a href="../index.html">INICIO</a></li>
+                            <li><a href="../comentarios.html">SOPORTE</a></li>
+                            <li><a href="../log_home.php">REGISTRO</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    </div>
+
+
+    <!--FILA 1 AQUI VA EL CONTENIDO DE LA PAGINA-->
+    <div class="view1">
+        <div class="contenedor">
+            <main class="contenido-principal">
+                <img src="../img/112 (1).png" alt="" class="contenido-principal__imagen">
+                <br>
+                <div class="contenido-principal__contenedor">
+                    <h1 class="contenido-principal__titulo">Quienes somos?</h1>
+                    <p class="contenido-principal__resumen">
+                    </p>
+                    <p class="contenido-principal__resumen">
+                        <p>Somos una empresa que ama los comics por eso decidimos crear una tienda física para todos los fans de los comics y el manga. En nuestra pagina web tenemos infinidad de productos pero nada en comporación con nuestra tienda.</p>
+                        <p>Os animamos al venir!</p>
+                    </p>
+                </div>
+            </main>
+
+
+
+            <!--AQUI VA EL IFRAME DE LA UBICACION-->
+
+
+
+
+            <!--FILA 2 (AQUI VA EL CARROUSELL)-->
+
+            <div class="carousel">
+                <div class="carousel__contenedor">
+                    <button aria-label="Anterior" class="carousel__anterior">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+
+                    <div class="carousel__lista">
+                        <div class="carousel__elemento">
+                            <img src="./img/Abanico.png" alt="Paypay">
+                        </div>
+
+                        <div class="carousel__elemento">
+                            <img src="./img/Bolsa.png" alt="Bateria externa">
+                        </div>
+
+                        <div class="carousel__elemento">
+                            <img src="./img/Cascos.png" alt="Bolsa">
+                        </div>
+
+                        <div class="carousel__elemento">
+                            <img src="./img/Chaqueta.png" alt="Camistea">
+                        </div>
+
+                        <div class="carousel__elemento">
+                            <img src="./img/Delantal.png" alt="Polo">
+                        </div>
+
+                        <div class="carousel__elemento">
+                            <img src="./img/Gafas.png" alt="Gorra">
+                        </div>
+
+                        <div class="carousel__elemento">
+                            <img src="./img/Mochila.png" alt="Mochila">
+                        </div>
+
+                        <div class="carousel__elemento">
+                            <img src="./img/Taza.png" alt="Taza">
+
+                        </div>
+
+                        <div class="carousel__elemento">
+                            <img src="./img/Paraguas.png" alt="Taza">
+                        </div>
+
+                        <div class="carousel__elemento">
+                            <img src="./img/Libreta.png" alt="Taza">
+                        </div>
+
+                        <div class="carousel__elemento">
+                            <img src="./img/Gorra.png">
+                        </div>
+                    </div>
+
+                    <button aria-label="Siguiente" class="carousel__siguiente">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+                </div>
+
+                <div role="tablist" class="carousel__indicadores"></div>
+            </div>
+        </div>
+    </div>
+    <!--AQUI VAN LOS SCRIPTS Y RUTAS -->
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+    <script src="../js/home.js"></script>
+
+    <!--INTENTO DE SEGUIR LA PAGINA-->
+    <div class="row flex center v2">
+
+        <div class="column-2">
+            <h2>Donde estamos?</h2>
+            <br>
+            <p>Estamos situados en Avinguda de la Verge de Montserrat, 273- El Prat de Llobregat</p>
+            <p>Os esperamos!</p>
+        </div>
+
+        <div class="column-2">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.1129427103056!2d2.105102515693882!3d41.349898779267605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a498d64bd023fd%3A0x26089fc39cb352a3!2sJesu%C3%AFtes%20Bellvitge%20-%20Centre%20d&#39;Estudis%20Joan%20XXIII!5e0!3m2!1sca!2ses!4v1652437247959!5m2!1sca!2ses"
+                width="" height="" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <!--AQUI VA EL FOOTER RESPOSNSIVE ANIMADO-->
+
+
+
+</body>
+
+</html>

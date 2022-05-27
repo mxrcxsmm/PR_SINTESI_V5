@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script id="dsq-count-scr" src="//comic-manga.disqus.com/count.js" async></script>
+    <link rel="stylesheet" href="./css/comentarios.css">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div>
+        <!--barra navbar imlementada responsive-->
+        <header class="header">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="logo">
+                        <a href="#">Comic & Manga</a>
+                    </div>
+                    <button type="button" class="nav-toggler">
+               <span></span>
+            </button>
+                    <nav class="nav">
+                        <ul>
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="./Noticias/Noticias.html">NEWS</a></li>
+                            <li><a href="./comics.php">COMICS</a></li>
+                            <li><a href="./index.html">INICIO</a></li>
+                            <li><a href="#" class="active">SOPORTE</a></li>
+                            <li><a href="./log_home.php">REGISTRO</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!--chat de discuss-->
+        <div class="recuadro">
+            <div id="disqus_thread"></div>
+            <script>
+                (function() { // DON'T EDIT BELOW THIS LINE
+                    var d = document,
+                        s = d.createElement('script');
+                    s.src = 'https://comic-manga.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+        </div>
+    </div>
+    <!--boton de whatsapp-->
+    <a href="https://wa.me/601419940" class="btn-wsp" target="_blank">
+        <i class="fa fa-whatsapp icono"></i>
+    </a>
+
+</body>
+
+</html>

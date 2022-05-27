@@ -1,0 +1,282 @@
+@import url(https://fonts.googleapis.com/css?family=Khula:700);
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+.fuentebtn {
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    background: #111;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.console-container {
+    font-family: Khula;
+    font-size: 4em;
+    text-align: center;
+    height: 200px;
+    width: 600px;
+    display: block;
+    position: absolute;
+    color: white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.console-underscore {
+    display: inline-block;
+    position: relative;
+    top: -0.14em;
+    left: 10px;
+}
+
+
+/*BOTON PAGINA DE INICIO*/
+
+
+/*BOTON PAGINA DE INICIO*/
+
+
+/*BOTON PAGINA DE INICIO*/
+
+
+/*BOTON PAGINA DE INICIO*/
+
+
+/*BOTON PAGINA DE INICIO*/
+
+
+/*BOTON PAGINA DE INICIO*/
+
+.btn-neon {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #fff;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.btn-neon:hover {
+    background: #4586c7d1;
+    box-shadow: 0 0 10px #45a6c7, 0 0 40px #45a0c7, 0 0 80px #4593c7;
+    transition-delay: 0.5s;
+}
+
+.btn-neon span {
+    position: absolute;
+    display: block;
+}
+
+#span1 {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #457fc7);
+}
+
+.btn-neon:hover #span1 {
+    left: 100%;
+    transition: 0.5s;
+}
+
+#span3 {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #456cc7);
+}
+
+.btn-neon:hover #span3 {
+    right: 100%;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+#span2 {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #5645c7);
+}
+
+.btn-neon:hover #span2 {
+    top: 100%;
+    transition: 0.5s;
+    transition-delay: 0.25s;
+}
+
+#span4 {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #4582c7);
+}
+
+.btn-neon:hover #span4 {
+    bottom: 100%;
+    transition: 0.5s;
+    transition-delay: 0.40s;
+}
+
+
+/*REDES SOCIALES ICONOS */
+
+
+/*REDES SOCIALES ICONOS */
+
+ul {
+    display: flex;
+    position: absolute;
+    top: 90vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    width: 80px;
+    height: 80px;
+    background-color: rgb(145, 145, 145);
+    text-align: center;
+    line-height: 80px;
+    font-size: 35px;
+    margin: 0 10px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid rgb(144, 144, 144);
+    z-index: 1;
+}
+
+ul li a .icon {
+    position: relative;
+    color: #262626;
+    transition: .5s;
+    z-index: 3;
+}
+
+ul li a:hover .icon {
+    color: #fff;
+    transform: rotateY(360deg);
+}
+
+ul li a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: .5s;
+    z-index: 2;
+}
+
+ul li a:hover:before {
+    top: 0;
+}
+
+ul li:nth-child(1) a:before {
+    background: #3b5999;
+}
+
+ul li:nth-child(2) a:before {
+    background: #55acee;
+}
+
+ul li:nth-child(3) a:before {
+    background: #b5007f;
+}
+
+ul li:nth-child(4) a:before {
+    background: #a139dd;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* OTRAS CLASES*/
+
+
+/* Diseño de columnas */
+
+.column-1 {
+    width: 100%;
+    float: left;
+}
+
+.column-2 {
+    width: 50%;
+    float: left;
+}
+
+.column-3 {
+    width: 33.33%;
+    float: left;
+}
+
+.column-4 {
+    width: 25%;
+    float: left;
+}
+
+.column-5 {
+    width: 20%;
+    float: left;
+}
+
+.column-6 {
+    width: 16.66%;
+    float: left;
+}
+
+.column-75 {
+    width: 75%;
+    float: left;
+}
+
+#header {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../img/11.png');
+}
+
+body {
+    margin: 0;
+}
+
+.center {
+    justify-content: center;
+}
+
+
+/*FLOAT*/
+
+.floatR {
+    float: right;
+}
